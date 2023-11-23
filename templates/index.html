@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+  container.classList.add("right-panel-active");
+  
+// Get user input
+        /*const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        // Basic validation (you should add more robust validation)
+        if (!name || !email || !password) {
+            alert('Please fill in all fields.');
+            return;
+        } */
+
+        // Mock server request (replace with actual AJAX or fetch call)
+        // Here, we're assuming a successful sign-up
+        // alert(`User ${name} signed up successfully!`);
+
+        // Clear the form fields (optional)
+        //signUpForm.reset();
+	
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+});
+  </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+    <title>Signin Template · Bootstrap v5.3</title>
+
+<link href="/static/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    
+    <!-- Custom styles for this template -->
+    <link href="/static/css/signin.css" rel="stylesheet">
+  </head>
+  <body class="d-flex align-items-center py-4 bg-body-tertiary">
+    <h1>ECS 235A</h1>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Create Account</h1>
+			<input type="text" id="name" placeholder="Name" />
+			<input type="email" id="email" placeholder="Email" />
+			<input type="password" id="password" placeholder="Password" />
+			<button type="button" id="signUpButton">Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign in</h1>
+		
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<a href="#">Forgot your password?</a>
+			<button>Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<p>
+		Created with <i class="fa fa-heart"></i> by
+		<a target="_blank" href="https://florin-pop.com">Florin Pop</a>
+		- Read how I created this and how you can join the challenge
+		<a target="_blank" href="https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/">here</a>.
+	</p>
+</footer>
+    </body>
+</html>
