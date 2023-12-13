@@ -5,7 +5,7 @@
 }
 
 body {
-	background: #f6f5f7;
+	background: #36454F;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -13,6 +13,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	height: 100vh;
 	margin: -20px 0 50px;
+	overflow-y: hidden;
 }
 
 h1 {

@@ -128,3 +128,5 @@ venv/
 .DS_store
 
 bazel-*
+
+users.db
